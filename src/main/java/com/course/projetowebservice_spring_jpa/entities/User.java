@@ -1,4 +1,4 @@
-package com.course.projetowebservice_Spring_JPA.entities;
+package com.course.projetowebservice_spring_jpa.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 

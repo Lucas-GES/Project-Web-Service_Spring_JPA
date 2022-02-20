@@ -1,14 +1,8 @@
-package com.course.projetowebservice_Spring_JPA.config;
+package com.course.projetowebservice_spring_jpa.config;
 
-import com.course.projetowebservice_Spring_JPA.entities.Category;
-import com.course.projetowebservice_Spring_JPA.entities.Order;
-import com.course.projetowebservice_Spring_JPA.entities.Product;
-import com.course.projetowebservice_Spring_JPA.entities.User;
-import com.course.projetowebservice_Spring_JPA.entities.enums.OrderStatus;
-import com.course.projetowebservice_Spring_JPA.repositories.CategoryRepository;
-import com.course.projetowebservice_Spring_JPA.repositories.OrderRepository;
-import com.course.projetowebservice_Spring_JPA.repositories.ProductRepository;
-import com.course.projetowebservice_Spring_JPA.repositories.UserRepository;
+import com.course.projetowebservice_spring_jpa.entities.*;
+import com.course.projetowebservice_spring_jpa.entities.enums.OrderStatus;
+import com.course.projetowebservice_spring_jpa.repositories.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
@@ -32,6 +26,9 @@ public class TestConfig implements CommandLineRunner {
 
     @Autowired
     private ProductRepository productRepository;
+
+    @Autowired
+    private OrderItemRepository orderItemRepository;
 
     @Override
     public void run(String... args) throws Exception {
@@ -70,5 +67,11 @@ public class TestConfig implements CommandLineRunner {
         userRepository.saveAll(Arrays.asList(u1, u2));
         orderRepository.saveAll(Arrays.asList(o1, o2, o3));
 
+        OrderItem oi1 = new OrderItem(o1, p1, 2, p1.getPrice());
+        OrderItem oi2 = new OrderItem(o1, p3, 1, p3.getPrice());
+        OrderItem oi3 = new OrderItem(o2, p3, 2, p3.getPrice());
+        OrderItem oi4 = new OrderItem(o3, p5, 2, p5.getPrice());
+
+        orderItemRepository.saveAll(Arrays.asList(oi1, oi2, oi3, oi4));
     }
 }

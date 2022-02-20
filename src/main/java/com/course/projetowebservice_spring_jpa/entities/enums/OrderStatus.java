@@ -1,4 +1,4 @@
-package com.course.projetowebservice_Spring_JPA.entities.enums;
+package com.course.projetowebservice_spring_jpa.entities.enums;
 
 public enum OrderStatus {
 

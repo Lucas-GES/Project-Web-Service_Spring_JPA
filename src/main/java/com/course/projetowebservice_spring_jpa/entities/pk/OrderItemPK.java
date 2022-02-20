@@ -1,11 +1,10 @@
-package com.course.projetowebservice_Spring_JPA.entities.pk;
+package com.course.projetowebservice_spring_jpa.entities.pk;
 
-import com.course.projetowebservice_Spring_JPA.entities.Order;
-import com.course.projetowebservice_Spring_JPA.entities.Product;
+import com.course.projetowebservice_spring_jpa.entities.Order;
+import com.course.projetowebservice_spring_jpa.entities.Product;
 
 import javax.persistence.Embeddable;
 import javax.persistence.JoinColumn;
-import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import java.io.Serializable;
 import java.util.Objects;

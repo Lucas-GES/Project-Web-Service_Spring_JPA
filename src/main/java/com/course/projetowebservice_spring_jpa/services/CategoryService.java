@@ -1,7 +1,7 @@
-package com.course.projetowebservice_Spring_JPA.services;
+package com.course.projetowebservice_spring_jpa.services;
 
-import com.course.projetowebservice_Spring_JPA.entities.Category;
-import com.course.projetowebservice_Spring_JPA.repositories.CategoryRepository;
+import com.course.projetowebservice_spring_jpa.entities.Category;
+import com.course.projetowebservice_spring_jpa.repositories.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

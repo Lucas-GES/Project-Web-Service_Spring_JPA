@@ -1,7 +1,7 @@
-package com.course.projetowebservice_Spring_JPA.services;
+package com.course.projetowebservice_spring_jpa.services;
 
-import com.course.projetowebservice_Spring_JPA.entities.User;
-import com.course.projetowebservice_Spring_JPA.repositories.UserRepository;
+import com.course.projetowebservice_spring_jpa.entities.User;
+import com.course.projetowebservice_spring_jpa.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

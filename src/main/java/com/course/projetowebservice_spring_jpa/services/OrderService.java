@@ -1,7 +1,7 @@
-package com.course.projetowebservice_Spring_JPA.services;
+package com.course.projetowebservice_spring_jpa.services;
 
-import com.course.projetowebservice_Spring_JPA.entities.Order;
-import com.course.projetowebservice_Spring_JPA.repositories.OrderRepository;
+import com.course.projetowebservice_spring_jpa.entities.Order;
+import com.course.projetowebservice_spring_jpa.repositories.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

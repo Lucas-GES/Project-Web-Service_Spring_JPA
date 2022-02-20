@@ -1,4 +1,4 @@
-package com.course.projetowebservice_Spring_JPA;
+package com.course.projetowebservice_spring_jpa;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

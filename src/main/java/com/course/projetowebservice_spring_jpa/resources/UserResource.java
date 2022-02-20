@@ -1,7 +1,7 @@
-package com.course.projetowebservice_Spring_JPA.resources;
+package com.course.projetowebservice_spring_jpa.resources;
 
-import com.course.projetowebservice_Spring_JPA.entities.User;
-import com.course.projetowebservice_Spring_JPA.services.UserService;
+import com.course.projetowebservice_spring_jpa.entities.User;
+import com.course.projetowebservice_spring_jpa.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
